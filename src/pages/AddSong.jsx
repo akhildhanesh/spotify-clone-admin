@@ -20,7 +20,7 @@ const AddSong = () => {
         axios.get('/album/list')
             .then(data => data.data.albums)
             .then(data => {
-                setAlbumData(data.map(item => item.name))
+                setAlbumData(() => data.map(item => item.name))
         })
     }
 
