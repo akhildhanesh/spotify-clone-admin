@@ -93,7 +93,7 @@ const AddSong = () => {
                         <option value="none">None</option>
                         {
                             albumData.map((item, i) => (
-                                <option key={i} value="item">{ item }</option>
+                                <option key={i} value={ item }>{ item }</option>
                             ))
                         }
                 </select>
